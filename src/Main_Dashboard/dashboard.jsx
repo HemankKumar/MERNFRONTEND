@@ -3,7 +3,7 @@ import './Dashboard.css';
 import { useNavigate } from 'react-router-dom';
 import { FaUserPlus, FaSignInAlt } from 'react-icons/fa';
 
-function Main_Dashboard() {
+function MainDashboard() {
   const navigate = useNavigate();
 
   const opensignup = () => navigate("/opensignuppage");
@@ -38,4 +38,4 @@ function Main_Dashboard() {
   );
 }
 
-export default Main_Dashboard;
+export default MainDashboard;
