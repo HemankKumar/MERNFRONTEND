@@ -7,7 +7,7 @@ export default function Findss(){
 
     const [obj,setObj]=useState({category:"", 
     product:"",
-    selprod:"",
+    selprod:"h",
     city:"",
     })
 
@@ -126,8 +126,11 @@ export default function Findss(){
                 </div>
                 {/*<button type="button" onClick={doFindGrower} className="ml-[600px] mb-[30px] w-[150px] mt-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search&nbsp;Grower</button>*/ }
                 </div> 
+                
                 : null }
                 <p>Selected product: {selprod}</p>
+
+               
 
              
         </div>
