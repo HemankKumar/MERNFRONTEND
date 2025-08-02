@@ -5,7 +5,6 @@ import { useState } from "react";
 
 import axios from "axios";
 
-import { PhotoIcon } from '@heroicons/react/24/solid'
 import { server_url } from "../config/url";
 
 function Profile() {
@@ -96,7 +95,7 @@ function Profile() {
     const url = server_url+`/save/fetch-profile?email=${obj.email}`;
     const serverData = await axios.get(url);
 
-    if(serverData.data.status==true) {
+    if(serverData.data.status===true) {
       if(serverData.data.obj!=null) {
         alert(JSON.stringify(serverData));
         setobj(serverData.data.obj);
