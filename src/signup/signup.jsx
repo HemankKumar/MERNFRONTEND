@@ -139,13 +139,13 @@ const handlePassword = (e) => {
                   />
                 </div>
 
-                <div className={email.length==0?"icon fill-color":message?"icon check-color":"icon error-color"} >
+                <div className={email.length===0?"icon fill-color":message?"icon check-color":"icon error-color"} >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
                 </svg>
                 </div>
 
-                <p className={email.length==0?"text-message fill-color":message?"text-message success-color":"text-message error-color"}>{email.length==0?"Please fill in the email field": message?"Email Valid":"Invalid Email" }</p>
+                <p className={email.length===0?"text-message fill-color":message?"text-message success-color":"text-message error-color"}>{email.length===0?"Please fill in the email field": message?"Email Valid":"Invalid Email" }</p>
 
               </div>
   
@@ -180,7 +180,17 @@ const handlePassword = (e) => {
                       />
                     </div>
 
-                    <p className={password.length==0?"pass-message fill-color":password?"pass-message success-color":"pass-message error-color"}>{password.length==0?"Must Use a Spl.Char,Digit and Alphabet": password.length>8?"Password Valid":"Invalid Password" }</p>
+                    {/* <p className={password.length===0?"pass-message fill-color":password?"pass-message success-color":"pass-message error-color"}>{password.length===0?"Must Use a Spl.Char,Digit and Alphabet": password.length>8?"Password Valid":"Invalid Password" }</p> */}
+                    <p className={password.length === 0 ? "pass-message fill-color" : isValid ? "pass-message success-color" : "pass-message error-color"}>
+                        {
+                          password.length === 0
+                            ? "Must use a Spl.Char, Digit, and Alphabet"
+                            : isValid
+                              ? "Password is strong ✅"
+                              : "Weak password ❌"
+                        }
+                    </p>
+
 
                 </div>
 
@@ -216,7 +226,7 @@ const handlePassword = (e) => {
                     />
                     </div>
 
-                    <p className={cpass?"cpass-message success-color":"cpass-message error-color"}>{cpass.length==0?" ":cpass?"Password Match😃":"Password do not match" }</p>
+                    <p className={cpass?"cpass-message success-color":"cpass-message error-color"}>{cpass.length===0?" ":cpass?"Password Match😃":"Password do not match" }</p>
 
                   </div>
 

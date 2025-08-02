@@ -3,7 +3,7 @@ import './dash.css';
 import { useNavigate } from 'react-router-dom';
 import { Card } from 'flowbite-react';
 
-function Dashconsumer() {
+function DashConsumer() {
     const navigate = useNavigate();
 
     function openprofileconsumer() {
@@ -78,4 +78,4 @@ function Dashconsumer() {
     );
 }
 
-export default Dashconsumer;
+export default DashConsumer;

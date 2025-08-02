@@ -1,10 +1,10 @@
 import "./profile.css";
 import { useState } from "react";
 import axios from "axios";
-import { PhotoIcon } from "@heroicons/react/24/solid";
+
 import { server_url } from "../config/url";
 
-function Profileconsumer() {
+function ProfileConsumer() {
   const [obj, setobj] = useState({
     email: "",
     firstname: "",
@@ -90,7 +90,7 @@ function Profileconsumer() {
     const url = server_url+`/save/fetch-profile-consumer?email=${obj.email}`;
     const serverData = await axios.get(url);
 
-    if (serverData.data.status == true) {
+    if (serverData.data.status === true) {
       if (serverData.data.obj != null) {
         alert(JSON.stringify(serverData));
         setobj(serverData.data.obj);
@@ -200,4 +200,4 @@ function Profileconsumer() {
   );
 }
 
-export default Profileconsumer;
+export default ProfileConsumer;
