@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #556270, #4ECDC4);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Card Styling */
+.custom-card {
+    width: 18rem;
+    height: 24rem;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 1rem;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Styling */
+.custom-button {
+    border-radius: 0.375rem;
+    padding: 0.5rem 1rem;
+    width: 7rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: white;
+    background-color: #4f46e5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-button:hover {
+    background-color: #4338ca;
+    transform: translateY(-2px);
+}

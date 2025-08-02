@@ -1,0 +1,44 @@
+
+.input-field .eye{
+    position: absolute;
+    transform: translate(350px);
+    margin-top: 77px;
+}
+
+.btn{
+    background-color:#743347;
+    color: #001a2d;
+
+}
+
+.btn:hover{
+    background-color: #592f45;
+    color: whitesmoke;
+}
+
+.input-field{
+    position: relative;
+}
+.input-field .icon{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center ;
+    margin-top: 29px;
+}
+
+.fill-color{
+    color: #b5b5bb;
+}
+.check-color{
+    color:#1882f8;
+}
+.success-color{
+    color:aliceblue;
+}
+.error-color{
+    color:#f81818;
+}

@@ -1,0 +1,82 @@
+/* Body with consumer-friendly green-blue gradient */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #d4fc79, #96e6a1, #b3e5fc);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Main container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+  margin-top: 50px;
+}
+
+/* Heading text */
+.text-heading {
+  font-size: 2rem;
+  font-family: 'Merriweather', serif;
+  color: #1e293b;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Flex layout for dropdowns */
+.flex-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f0fdf4;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Individual input sections */
+.flex-row > div {
+  flex: 1 1 30%;
+  min-width: 250px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+}
+
+/* Labels */
+label {
+  font-size: 1rem;
+  font-family: 'Georgia', serif;
+  margin-bottom: 6px;
+  display: block;
+  color: #334155;
+}
+
+/* Select dropdowns */
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background-color: #f1f5f9;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+select:focus {
+  border-color: #38bdf8;
+  outline: none;
+  background-color: #ffffff;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .flex-row {
+    flex-direction: column;
+  }
+}

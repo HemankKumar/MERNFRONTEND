@@ -1,0 +1,50 @@
+.psignup .signup{
+    height: 210px;
+    width: 230px;
+}
+
+.psignup.text{
+    color: #001a2d;
+}
+
+.btn{
+    background-color: #eeb7ca;
+    color: #001a2d;
+
+}
+
+.btn:hover{
+    background-color: #117e85;
+    color: whitesmoke;
+}
+.input-field{
+    position: relative;
+}
+.input-field .icon{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center ;
+    margin-top: 29px;
+}
+.input-field .eye{
+    position: absolute;
+    transform: translate(350px);
+    margin-top: 73px;
+}
+
+.fill-color{
+    color: #b5b5bb;
+}
+.check-color{
+    color:#1882f8;
+}
+.success-color{
+    color:aliceblue;
+}
+.error-color{
+    color:#f81818;
+}

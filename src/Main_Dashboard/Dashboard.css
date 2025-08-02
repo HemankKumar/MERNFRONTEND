@@ -1,0 +1,95 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e8f5e9, #fffde7); /* Soft green to cream */
+  height: 100%;
+}
+
+.main-container {
+  animation: fadeIn 1.5s ease-in;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.btn {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  margin-left: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.btn .icon {
+  margin-right: 8px;
+}
+
+.btn:hover {
+  background-color: #43a047;
+  transform: scale(1.05);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 50%;
+  min-width: 300px;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  color: #1b5e20;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.hero-image img {
+  max-width: 400px;
+  animation: float 3s ease-in-out infinite;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
